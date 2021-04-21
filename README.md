@@ -1,6 +1,6 @@
 # Link of deploy: https://isoft-s-test-modal.netlify.app
 
-______________________________________________________________________
+
 
 ## Getting Started with Create React App
 
