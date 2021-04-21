@@ -10,6 +10,10 @@
     "@types/node": "^12.20.8",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
+    "mobx": "^6.2.0",
+    "mobx-react": "^7.1.0",
+    "mobx-react-lite": "^3.2.0",
+    "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.12.1"
   }
 }

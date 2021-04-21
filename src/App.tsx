@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Input } from './components/input/input';
+import { Title } from './components/title/title';
+import { Modal } from './components/modal/modal';
+import { Button } from './components/button/button';
+import { observer } from 'mobx-react';
+import './App.scss';
 
-function App() {
+const App = observer((props: any) => {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="our-app">
+      <Title />
+      <Input 
+          handleChange={props.store.handleChange}
+          name={props.store.name}
+          surname={props.store.surname}
+      />
+      <Modal 
+          isOpenModal={props.store.isOpenModal} 
+          closeModal={props.store.closeModal}
+          name={props.store.name}
+          surname={props.store.surname}
+      />
+      <Button openModal={props.store.openModal}/>
     </div>
   );
-}
+  
+})
 
 export default App;
